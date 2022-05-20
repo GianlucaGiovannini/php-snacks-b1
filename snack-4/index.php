@@ -12,12 +12,12 @@ $alunni = [
     [
         'nome' => 'Alessio',
         'cognome' => 'Riccardi',
-        'voti' => [7, 8, 5, 6, 8]
+        'voti' => [7, 3, 5, 6, 5]
     ],
     [
         'nome' => 'Matteo',
         'cognome' => 'Giannetti',
-        'voti' => [5, 6, 5, 6, 4]
+        'voti' => [5, 4, 5, 6, 4]
     ],
     [
         'nome' => 'Lorenzo',
@@ -46,18 +46,22 @@ $alunni = [
     <h1> Alunno / media voti</h1>
 
     <?php foreach($alunni as $alunno) { ?>
+
         <h3>
-        <?php echo $alunno['nome'];
-            echo $alunno['cognome'];
-            # posso fare un ciclo facendo così oppure ne faccio due come sotto 
-            // echo ' / ' . array_sum($alunno['voti']) / count($alunno['voti']);
-            $somma = 0;
+            <?php echo $alunno['nome'];
+                echo $alunno['cognome'];
+               
+                echo ' / ' . array_sum($alunno['voti']) / count($alunno['voti']);
 
-            foreach($alunno['voti'] as $voti) {
-            $somma += $voti;
-            }
+                # se voglio fare due cicli faccio così
+               /*  $somma = 0;  // 
 
-            echo ' / ' . $somma / count($alunno['voti']); ?>
+                foreach($alunno['voti'] as $voti) {
+                $somma += $voti;
+                }
+
+                echo ' / ' . $somma / count($alunno['voti']);  */
+                ?>
         </h3>
     <?php } ?>
 
