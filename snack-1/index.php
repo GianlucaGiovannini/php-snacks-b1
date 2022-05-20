@@ -30,7 +30,7 @@ $risultatiPartite = [
         'homeResult' => 99,
         'out' => 'Chicago Bulls',
         'outResult' => 101,
-    ],
+    ]
 ];
 // var_dump($risultatiPartite)
 
