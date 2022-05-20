@@ -48,19 +48,20 @@ $alunni = [
         <div> <?php foreach($alunni as $alunno) { ?>
             <h3>
                 <?php 
-                    echo $alunno['nome'] . ' ';
-                    echo $alunno['cognome'];
-                
+                    echo $alunno['nome'] . ' ' . $alunno['cognome'];
+
+                    // media dei voti sommando con il metodo array_sum tutti i voti e poi dividendoli per la lunghezza dell'array stesso
                     echo ' / ' . array_sum($alunno['voti']) / count($alunno['voti']);
 
-                    # se voglio fare due cicli faccio così
-                    /* $somma = 0;  // 
- 
-                    foreach($alunno['voti'] as $voti) {
-                    $somma += $voti;
-                    }
+                    /* Oppure si può fare così 
 
-                    echo ' / ' . $somma / count($alunno['voti']);  */
+                    $somma = array_sum($alunno['voti']);
+                    $media = $sum / count($alunno['voti']);
+
+                    e nel primo echo aggiungere . ' ' . $media 
+
+                    */
+
                 ?>
             </h3>
         </div> <?php } ?>
