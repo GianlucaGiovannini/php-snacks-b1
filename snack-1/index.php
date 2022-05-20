@@ -26,7 +26,7 @@ $risultatiPartite = [
         'outResult' => 92,
     ],
 ];
-var_dump($risultatiPartite)
+// var_dump($risultatiPartite)
 
 ?>
 
@@ -44,7 +44,7 @@ var_dump($risultatiPartite)
 
     <?php for ($i = 0; $i <= count($risultatiPartite) -1; $i++) { ?>
         <p>
-            <?php echo $risultatiPartite[$i]['home'] . ' - ' . $risultatiPartite[$i]['out']  . ' || ' . $risultatiPartite[$i]['homeResult'] . ' - ' . $risultatiPartite[$i]['outResult'] ?>
+            <?php echo $risultatiPartite[$i]['home'] . ' - ' . $risultatiPartite[$i]['out']  . ' | ' . $risultatiPartite[$i]['homeResult'] . ' - ' . $risultatiPartite[$i]['outResult'] ?>
         </p>
     <?php } ?>
     
