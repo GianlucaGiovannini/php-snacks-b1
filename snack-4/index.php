@@ -45,7 +45,8 @@ $alunni = [
     
     <h1> Alunno / media voti</h1>
 
-        <div> <?php foreach($alunni as $alunno) { ?>
+    <div> 
+        <?php foreach($alunni as $alunno) { ?>
             <h3>
                 <?php 
                     echo $alunno['nome'] . ' ' . $alunno['cognome'];
@@ -64,7 +65,8 @@ $alunni = [
 
                 ?>
             </h3>
-        </div> <?php } ?>
+        <?php } ?>
+    </div> 
     
 
 </body>
